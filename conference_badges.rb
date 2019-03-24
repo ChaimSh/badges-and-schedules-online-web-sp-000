@@ -24,5 +24,4 @@ end
 def printer
   new_array = [] << batch_badge_creator << assign_rooms
 end
-new_array
-end
+printer
