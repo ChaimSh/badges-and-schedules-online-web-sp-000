@@ -21,7 +21,13 @@ attendees.collect do |name|
   end
 end
 
-def printer
-  new_array = [] << batch_badge_creator(attendees) << assign_rooms
+def printer(attendees)
+  batch_badge_creator(attendees).each do |value|
+puts value
+  end
+
+  assign_rooms.each do |value|
+puts value
+  end
+
 end
-printer
