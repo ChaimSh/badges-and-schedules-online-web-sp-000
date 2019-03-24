@@ -22,6 +22,6 @@ attendees.collect do |name|
 end
 
 def printer(array)
-  new_array = [] << batch_badge_creator << assign_rooms
+  new_array = [] << batch_badge_creator(attendees) << assign_rooms(attendees)
 end
 printer
