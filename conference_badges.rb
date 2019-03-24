@@ -21,7 +21,7 @@ attendees.collect do |name|
   end
 end
 
-def printer(array)
+def printer(new_array)
   new_array = [] << batch_badge_creator(attendees) << assign_rooms(attendees)
 end
-printer(array)
+printer(new_array)
